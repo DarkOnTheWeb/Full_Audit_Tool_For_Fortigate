@@ -1,0 +1,17 @@
+# Установка зависимостей
+pip install colorama
+
+# Базовое использование (все проверки + все отчеты)
+python fortigate_audit.py config.txt --all
+
+# Только CIS проверки + HTML отчет
+python fortigate_audit.py config.txt --cis --format html
+
+# Только анализ firewall + JSON отчет
+python fortigate_audit.py config.txt --firewall --format json
+
+# Все проверки с verbose выводом
+python fortigate_audit.py config.txt --all --verbose
+
+# Справка по командам
+python fortigate_audit.py --help
